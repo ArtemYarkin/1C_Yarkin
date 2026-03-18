@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="Номенклатура">
+		<text>ВЫБРАТЬ
+    СписокНоменклатуры.Номенклатура,
+    СписокНоменклатуры.Количество,
+    СписокНоменклатуры.Сумма
+ИЗ
+    Документ.ОказаниеУслуг.СписокНоменклатуры КАК СписокНоменклатуры
+
+ИТОГИ
+    СУММА(Количество),
+    СУММА(Сумма)
+ПО
+    Номенклатура
+</text>
+		<textSQL>
+
+		</textSQL>
+		<planSQL>
+
+		</planSQL>
+		<typeSQL>
+
+		</typeSQL>
+		<parameters>
+			<parameter name="Ссылка" type="CatalogRef.Номенклатура" value="826260b1-0ce7-11f1-8b66-843e1d28b260"/>
+		</parameters>
+	</query>
+</querylist>
